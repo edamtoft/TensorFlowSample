@@ -4,8 +4,8 @@ import pandas as pd
 measurements = [
   "SepalLength",
   "SepalWidth",
-  "PedalLength",
-  "PedalWidth"
+  "PetalLength",
+  "PetalWidth"
 ]
 
 species = [
@@ -52,8 +52,8 @@ print("model accuracy is {accuracy:.3f}%".format(accuracy=evaluation["accuracy"]
 predict_features = pd.DataFrame.from_dict({
     "SepalLength": [6.8],
     "SepalWidth": [2.8],
-    "PedalLength": [4.8],
-    "PedalWidth": [1.4]
+    "PetalLength": [4.8],
+    "PetalWidth": [1.4]
 })
 
 predictions = classifier.predict(input_fn=tf.estimator.inputs.pandas_input_fn(x=predict_features,shuffle=False))

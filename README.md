@@ -18,11 +18,11 @@ pip install pandas
 
 ## Background
 
-The iris dataset we're using is a well known machine learning dataset that includes measurements of 150 iris flowers of three different species. The measurements are of sepal length, sepal width, pedal length, and pedal width. The idea is that we should be able to figure out the species from those measurements with some degree of accuracy. I've gotten 95-99% accuracy on most runs of this example.
+The iris dataset we're using is a well known machine learning dataset that includes measurements of 150 iris flowers of three different species. The measurements are of sepal length, sepal width, petal length, and petal width. The idea is that we should be able to figure out the species from those measurements with some degree of accuracy. I've gotten 95-99% accuracy on most runs of this example.
 
 So basically, given a bunch of data like this,
 
-|Sepal Length|Sepal Width|Pedal Length|Pedal Width|Species        |
+|Sepal Length|Sepal Width|Petal Length|Petal Width|Species        |
 |------------|-----------|------------|-----------|---------------|
 |4.8         |3.1        |1.6         |0.2        |Iris-setosa    |
 |5.8         |2.7        |4.1         |1.0        |Iris-versicolor|
@@ -32,7 +32,7 @@ So basically, given a bunch of data like this,
 
 We want to be able to figure out the species of this iris:
 
-|Sepal Length|Sepal Width|Pedal Length|Pedal Width|Species        |
+|Sepal Length|Sepal Width|Petal Length|Petal Width|Species        |
 |------------|-----------|------------|-----------|---------------|
 |6.8         |2.8        |4.8         |1.4        |??????         |
 
@@ -118,8 +118,8 @@ This part is pretty self-explanitory. It will run through the data in the batche
 predict_features = pd.DataFrame.from_dict({
     "SepalLength": [6.8],
     "SepalWidth": [2.8],
-    "PedalLength": [4.8],
-    "PedalWidth": [1.4]
+    "PetalLength": [4.8],
+    "PetalWidth": [1.4]
 })
 
 predictions = classifier.predict(input_fn=tf.estimator.inputs.pandas_input_fn(x=predict_features,shuffle=False))
@@ -131,4 +131,4 @@ species = species[class_id]
 print("prediction is {species} with {probability:.3f}% certainty".format(species=species, probability=probability*100))
 ```
 
-Now we can actually use the neural network to do something useful! It's trained and evaluated, so we'll use it to predict the species of a single iris based on the pedal measurements. The predict method returns a generator of results. Since we just want a single result, we just call next() on it and grab out the species and probability based on the class_id of the prediction.
+Now we can actually use the neural network to do something useful! It's trained and evaluated, so we'll use it to predict the species of a single iris based on the petal measurements. The predict method returns a generator of results. Since we just want a single result, we just call next() on it and grab out the species and probability based on the class_id of the prediction.
