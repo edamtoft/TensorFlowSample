@@ -32,7 +32,7 @@ We want to be able to figure out the species of this iris:
 |------------|-----------|------------|-----------|---------------|
 |6.8         |2.8        |4.8         |1.4        |??????         |
 
-We'll be using a pre-build Deep Neural Network classifier provided in TensorFlow. A neural network is a network of N inputs (in this case 4 - one for each measurement), N outputs (in this case 3 - one for each possible species), and some amount of interconnected "hidden" layers in between. Anything with more than one hidden layer is a "deep" neural network. There is no real magic formula for how many hidden layers you should have or how many nodes each one should contain - you generally have to tweak this until you find a balance of performance/accuracy which fits your problem. We're arbitrarily using 2 hidden layers with 10 nodes each. In this case, this may be overkill, but this is just an example.
+We'll be using a pre-built [Deep Neural Network](https://en.wikipedia.org/wiki/Deep_learning#Deep_neural_networks) classifier provided in TensorFlow. A neural network is a network of N inputs (in this case 4 - one for each measurement), N outputs (in this case 3 - one for each possible species), and some amount of interconnected "hidden" layers in between. Anything with more than one hidden layer is a "deep" neural network. There is no real magic formula for how many hidden layers you should have or how many nodes each one should contain - you generally have to tweak this until you find a balance of performance/accuracy which fits your problem. We're arbitrarily using 2 hidden layers with 10 nodes each. In this case, this may be overkill, but this is just an example.
 
 ![Diagram of Neural Network](neural_network.png)
 
