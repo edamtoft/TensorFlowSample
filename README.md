@@ -42,6 +42,8 @@ We'll be using a pre-built [Deep Neural Network](https://en.wikipedia.org/wiki/D
 
 ## In Depth
 
+The full source code is in [main.py](https://github.com/edamtoft/TensorFlowSample/blob/master/main.py).
+
 ### Preparing the Data
 
 ```python
