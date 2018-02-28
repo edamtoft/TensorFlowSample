@@ -28,6 +28,8 @@ So basically, given a bunch of data like this,
 |5.8         |2.7        |4.1         |1.0        |Iris-versicolor|
 |6.4         |2.7        |5.3         |1.9        |Iris-virginica |
 
+[Full Dataset](https://github.com/edamtoft/TensorFlowSample/blob/master/iris.data.csv)
+
 We want to be able to figure out the species of this iris:
 
 |Sepal Length|Sepal Width|Pedal Length|Pedal Width|Species        |
