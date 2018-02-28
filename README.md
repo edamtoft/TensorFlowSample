@@ -1,5 +1,7 @@
-# TensorFlowSample
+# TensorFlow Sample
 A Very Basic TensorFlow Sample Project
+
+![TensorFlow](tensorflow.png)
 
 This project is meant to show a simple use of a deep neural network with TensorFlow to classify the [Iris Dataset](http://archive.ics.uci.edu/ml/datasets/Iris). This project is meant to show off a clean and simple use of the high-level APIs exposed by TensorFlow. Many of the "hello world" or introductory samples I've found tend to start off with lower level components of TensorFlow, or involve a lot of "plumbing" before you actually get to the relevant part of the solution. This is how to create a deep neural network to classify a well known dataset in ~20 lines of code.
 
